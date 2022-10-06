@@ -1,0 +1,16 @@
+body {
+  margin: 0%;
+  background-color: #EFEFEF;
+  padding: 0%;
+}
+.enter_logo{
+  background-image: url(../image/graylog.jpg);
+  background-repeat: no-repeat;
+ 
+  background-size: 100%;
+height: 35rem;
+display: flex;
+}
+.elements_logo {
+
+}
