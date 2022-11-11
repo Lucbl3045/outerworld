@@ -8,7 +8,7 @@
     <div id="personal_info">
       <div style="align-self:center ;">
         <h5>User_Name</h5>
-
+        <?php echo($_SESSION['user']); ?>
       </div>
 
       <button>account info</button>
