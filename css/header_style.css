@@ -81,3 +81,13 @@ text-decoration: none;
   margin-bottom: 5rem;
 margin-right: 20px;
 }
+#header_img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4rem;
+}
+#header_logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4rem;
+}
