@@ -5,11 +5,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="../css/login_style.css">
+
+  <title>Login</title>
 </head>
 
 <body>
-  Putooo
+  <div id="login_container">
+    <form action="../php/login.php" method="post" class="form_Style">
+      <label for="">
+        Gmail
+      </label>
+      <input type="mail" name="email" id="gmailent" class="input_enter">
+      <label for="">
+        password
+      </label>
+      <input type="password" name="password" class="input_enter" id="passent">
+      <input type="submit" id="submit_bttn">Ingresar</input>
+    </form>
+  </div>
+  <script>
+    var submit = document.getElementById("submit_bttn");
+    submit.disabled = true;
+    var mail = document.getElementById("gmailent");
+    var password = document.getElementById("passent");
+    document.addEventListener("keydown", function () {
+      mail.innerHTML.length > 1 && password.innerHTML.length > 1 ? submit.disabled = false : submit.disabled = true;
+    })
+  </script>
 </body>
 
 </html>

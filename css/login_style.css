@@ -1,0 +1,21 @@
+#login_container { 
+  display: flex;
+  align-self: center;
+  justify-self: center;
+
+}
+body {
+  margin: 0;
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form_Style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: black solid 11px;
+  width: 30rem;
+  padding: 50px;
+}

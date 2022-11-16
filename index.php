@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,22 +24,21 @@
 
 <body>
   <header id="header_main">
-  <?php isset($_SESSION['user'])? require_once("./navbars/logged_header.html") : require_once("./navbars/unlogged_header.html"); ?>
+    <?php isset($_SESSION['user']) ? require_once("./navbars/logged_header.html") : require_once("./navbars/unlogged_header.html"); ?>
   </header>
   <div id="container">
-  <?php 
-  if(isset($_SESSION['user'])){
-    require("./views/feed.php");
-  }
-    else {
+    <?php
+    if (isset($_SESSION['user'])) {
+      require("./views/feed.php");
+    } else {
       require("./views/whoweare.html");
-  }
-  ?>
-  <footer id="footer_main">
-    <h4 style="color:white ;">Copyright <span><a href="www.lego.com">@LucasB2</a></span></h4>
-    <h4>pato</h4>
-  <div class="relations"><a href="twitter.com/" ></a><a href="twitter.com/" ></a><a href="twitter.com/" ></a></div>
-  </footer>
+    }
+    ?>
+    <footer id="footer_main">
+      <h4 style="color:white ;">Copyright <span><a href="www.lego.com">@LucasB2</a></span></h4>
+      <h4>pato</h4>
+      <div class="relations"><a href="twitter.com/"></a><a href="twitter.com/"></a><a href="twitter.com/"></a></div>
+    </footer>
 </body>
 <script src="./js/header.js"></script>
 
